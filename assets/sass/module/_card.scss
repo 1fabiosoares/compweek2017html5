@@ -1,0 +1,45 @@
+// ==============================================
+//                    Card
+// ==============================================
+.card{
+  background-color: $niceWhiteTransparent;
+  border: 1px solid darken($niceGrey, 30%);
+  border-radius: $radiusLight;
+  margin: $defaultPadding/2;
+  // ==============================================
+  //                Card Header
+  // ==============================================
+  & >.header{
+    border-top-left-radius: $radiusLight;
+    border-top-right-radius: $radiusLight;
+    padding: $defaultPadding $defaultPadding*2;
+    font-size: $h2Size;
+    font-weight: $fontLight;
+    &.image{
+      display: flex;
+      align-items: flex-end;
+      padding: 0;
+      overflow: hidden;
+      border-top-left-radius: $radiusLight;
+      border-top-right-radius: $radiusLight;
+
+      & > span{
+        position: absolute;
+        padding: $defaultPadding;
+      }
+
+      & > img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  // ==============================================
+  //                Card Content
+  // ==============================================
+  & > .content{
+    padding: $defaultPadding;
+  }
+
+}
