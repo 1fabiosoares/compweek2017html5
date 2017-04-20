@@ -4,6 +4,8 @@ angular.module('app', ['ngStorage'])
     $scope.$storage.todos;
  
     $scope.addTodo = function() {
+      if($scope.$storage.todos === undefined)
+        $scope.$storage.todos = [];
       $scope.$storage.todos.push({text:$scope.todoText, done:false});
       $scope.todoText = '';
     };
