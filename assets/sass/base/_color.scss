@@ -37,6 +37,8 @@ $complementaryBrown : #C46B00;
 //         More Nice Colors
 // ==============================================
 $niceOrange: #F0A32F;
+$niceHTML: #F16529;
+$niceHTMLDarken: #E44D26;
 
 .niceMarry{
   @include niceBackground($niceBlue, $nicePurple);
@@ -75,4 +77,8 @@ $niceOrange: #F0A32F;
 
 .niceBlue{
   @include niceBackground($niceBlue, darken($niceBlue, 25%));
+}
+
+.niceHTML{
+  @include niceBackground($niceHTML, $niceHTMLDarken)
 }

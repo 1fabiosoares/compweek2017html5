@@ -30,6 +30,8 @@ a {
 
   cursor: pointer;
 
+  text-align: center;
+
   @include niceTransition(color, background, border);
 
   &:hover{

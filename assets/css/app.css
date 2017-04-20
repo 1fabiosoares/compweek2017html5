@@ -1,0 +1,16 @@
+.button{
+	text-align: center;
+	box-shadow: border-box;
+}
+.formControl{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+.form{
+	padding: 10px;
+}
+.feito-true{
+	text-decoration: line-through;
+}

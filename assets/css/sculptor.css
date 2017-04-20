@@ -470,6 +470,12 @@ template {
   background: -o-linear-gradient(135deg, #30499B, #121b3a) !important;
   background: linear-gradient(135deg, #30499B, #121b3a) !important; }
 
+.niceHTML {
+  background: -webkit-linear-gradient(135deg, #F16529, #E44D26) !important;
+  background: -moz-linear-gradient(135deg, #F16529, #E44D26) !important;
+  background: -o-linear-gradient(135deg, #F16529, #E44D26) !important;
+  background: linear-gradient(135deg, #F16529, #E44D26) !important; }
+
 /**
   * Variables
 
@@ -992,6 +998,7 @@ a {
   padding: 10px 20px;
   border-radius: 52px;
   cursor: pointer;
+  text-align: center;
   transition-property: color, background, border;
   transition-duration: 300ms; }
   .button:hover {
@@ -1137,7 +1144,6 @@ a {
   width: 100%;
   box-sizing: border-box;
   padding: 10px 20px;
-  margin: 10px 0;
   background: rgba(238, 238, 238, 0.8);
   border: 1px solid white;
   border-radius: 8px;
@@ -1294,17 +1300,17 @@ nav.navbar.warning {
 .listview {
   display: block;
   width: 100%; }
-  .listview > .item {
+  .listview .item {
     display: block;
     width: 100%;
     color: #222222;
     border-top: 1px solid #EEEEEE;
     padding: 10px 20px;
     box-sizing: border-box; }
-    .listview > .item:active {
+    .listview .item:active {
       background: #e1e1e1; }
     @media only screen and (min-width: 993px) {
-      .listview > .item:hover {
+      .listview .item:hover {
         background: #EEEEEE; } }
 
 /**
